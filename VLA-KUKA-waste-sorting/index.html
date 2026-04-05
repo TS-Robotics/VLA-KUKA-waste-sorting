@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Zero-Shot Robotic Waste Sorting: Integrating Vision-Language-Action Models and RGB-D Sensing on KUKA LBR iiwa">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zero-Shot Robotic Waste Sorting: Integrating Vision-Language-Action Models and RGB-D Sensing on KUKA LBR iiwa
+  </title>
+  <style>
+    .spaced-image-left {
+      padding-left: 10px;
+      /* Adjust the value as needed */
+    }
+
+    .spaced-image-right {
+      padding-right: 10px;
+      /* Adjust the value as needed */
+    }
+
+    .image-width {
+      width: 1500px;
+      /* Adjust the value as needed */
+    }
+
+    .carousel-item {
+      text-align: center;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: black;
+    }
+
+    .author-block {
+      color: black;
+    }
+
+    .author-block a {
+      color: red;
+      /* or whatever color you want for the link */
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+  </style>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/icona_univpm.png">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <!-- POR FAZER-->
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Zero-Shot Robotic Waste Sorting: Integrating Vision-Language-Action
+              Models and RGB-D Sensing on KUKA LBR iiwa</h1>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=mJs3hqcAAAAJ&hl=en">Teresa Sinico</a>,</span>
+              <a href="https://scholar.google.com/citations?user=z1LDvpEAAAAJ&hl=it">Daniele Businaro</a>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=nWwhqOMAAAAJ&hl=en">Giovanni Boschetti</a>
+            </div>
+            <br>
+            <!-- <hr style="height:0px; visibility:hidden;" /> -->
+            <a href="https://www.unipd.it/en/" target="_blank">
+              <img src="./static/images/unipd_logo.png" width="35%" class="center-image" alt="UC Logo">
+            </a>
+            <a href="http://www.uc.pt" target="_blank">
+              <img src="./static/images/logo_dtg.png" width="18%" class="center-image" alt="UC Logo">
+            </a>
+
+            </a>
+
+            <!-- <div class="is-size-3 publication-authors">
+            <span class="author-block">Cornell University</span>
+          </div> -->
+
+            <div class="column has-text-centered">
+
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://www.mdpi.com/journal/robotics"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://www.youtube.com/embed/vzJ5-NgYcj4"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Video S2 -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="publication-video">
+              <!-- add a link to youtube video using iframe -->
+              <!-- <video poster="" id="shiba" controls playsinline> -->
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/vzJ5-NgYcj4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <!-- </video>  -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Dataset -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-8">Robotic waste sorting with Vision-Language-Action models</h2>
+          <!-- <div class="publication-video"> -->
+          <p style="text-align: left;"> Robotic waste sorting is a challenging task, requiring advanced perception and manipulation capabilities for diverse, unstructured waste items. Our research introduces a novel <b>zero-shot robotic waste sorting system powered by Vision-Language-Action (VLA) models</b>.
+VLAs are pre-trained on vast multimodal datasets (text, images, robot actions), enabling them to perform complex tasks without task-specific training or time-consuming data collection and labeling. Our system interacts with the VLA via an <b>API call</b>, providing an image and a natural language 'prompt.' The VLA then processes this input and returns a structured <b>JSON response</b>, detailing object information and action plans. </li>
+          
+          </p>
+          <br>
+          <figure style="text-align: center; width: 100%; margin: 0 auto;">
+            <img src="./static/images/fig1.png" alt="example_prompt" style="max-width: 100%; display: block;">
+            <figcaption style="font-size: 0.8em;"><b>Figure 1:</b> Overview of the information workflow between the system prompt, the RGB image, and
+the AI model</figcaption>
+          </figure>
+
+        <br>
+
+          <p style="text-align: left;">
+            We designed six distinct prompt types to guide the VLA's intelligence for waste sorting:
+          <ul style="text-align: left; list-style-type: disc; margin-left: 20px;">
+            <li> <b>Prompt 1 (basic classification):</b> identifies waste objects and their geometric centers; </li>
+            <li> <b>Prompt 2 (optimal grasping points):</b> locates optimal grasping positions for irregular items; </li>
+            <li> <b>Prompt 3 (2D bounding boxes):</b> defines object boundaries; </li>
+            <li> <b>Prompt 4 (topmost object):</b> identifies the topmost object in cluttered scenes (the one that should be grasped first); </li>
+            <li> <b>Prompt 5 (grasping priority):</b> establishes a complete picking priority based on spatial arrangement.</li>
+            <li> <b>Prompt 6 (graspable vs. ungraspable):</b> distinguishes between graspable and ungraspable (occluded) items.   </li>
+
+            </p>
+          <br>
+          <figure style="text-align: center; width: 100%; margin: 0 auto;">
+            <img src="./static/images/fig3.png" alt="example_prompt" style="max-width: 100%; display: block;">
+            <figcaption style="font-size: 0.8em;"><b>Figure 2:</b> Visualized outputs generated by the model for the six prompts applied to the
+same input image, with the corresponding inference time (bottom left corner)</figcaption>
+          </figure>
+
+        <br>
+            
+          </ul>
+
+          <!-- </div> -->
+        </div>
+      </div>
+
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Robotic workcell and system integration</h2>
+
+          <p style="text-align: left;">
+            Our zero-shot waste sorting system is implemented on a <b>7 DOF KUKA LBR iiwa collaborative robot</b>, equipped with a <b>pneumatic vacuum gripper </b> and <b>Intel RealSense RGB-D camera</b>. This sensor provides both color (RGB) and depth information, which enables the system to accurately perceive object heights, identify overlapping items, and make informed grasping decisions in cluttered scenes. The entire robotic workcell is controlled via an external computer using Python: this setup enables seamless communication between the VLA model (accessed through its cloud API), the RGB-D camera, and the KUKA robot's control system. 
+          </p>
+
+          <br>
+
+          <figure style="text-align: center; width: 100%; margin: 0 auto;">
+            <img src="./static/images/fig2.png" alt="example_prompt" style="max-width: 100%; display: block;">
+            <figcaption style="font-size: 0.8em;"><b>Figure 3:</b> Robotic system setup and data communication workflow.</figcaption>
+          </figure>
+
+          <br>
+
+          
+          </p>
+          <!-- </div> -->
+        </div>
+      </div>
+
+
+      <br>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-8"> System performance</h2>
+
+      
+
+          <p style="text-align: left;">
+            Our experiments demonstrate robust perception and efficient performance for zero-shot robotic waste sorting:
+          <ul style="text-align: left; list-style-type: disc; margin-left: 20px;">
+            <li> <b>Inference time between 2 to 4 seconds</b>, varying with prompt complexity and level of clutter, which is suitable for collaborative robotics applications; </li>
+            <li> <b>High overall classification accuracy (89.64%)</b>, with usorted waste being the most difficult type of waste to correctly classify; </li>
+            <li> The <b>incorporation of depth images</b> significantly improves the VLA's spatial awareness, as it allows the system to accurately perceive object heights, resolve occlusions, and make informed grasping decisions in heavily cluttered environments while not significantly increasing the system's inference time. </li>
+
+            </p>
+
+          <br>
+
+          <figure style="text-align: center; width: 100%; margin: 0 auto;">
+            <img src="./static/images/fig6.png" style="max-width: 100%;">
+            <figcaption style="font-size: 0.8em;">
+              <b>Figure 4:</b> Comparison of the VLA model's output using standard 2D RGB input versus combined RGB-D input across prompts 4-6.
+            </figcaption>
+          </figure>
+
+          <br>
+
+          <!-- </div> -->
+        </div>
+      </div>
+
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-8">Real-world grasping strategies</h2>
+
+          <p style="text-align: left;">
+            We designed and validated multiple grasping strategies  to handle different levels of clutter:
+          </p>
+
+          <br>
+
+          <ul style="text-align: left; list-style-type: disc; margin-left: 20px;">
+            <li><b>Strategy 1:</b> Single API call for non-cluttered scenes (high efficiency);</li>
+            <li><b>Strategy 2:</b> Iterative picking of topmost object (high safety, low efficiency);</li>
+            <li><b>Strategy 3:</b> Single call with grasping priority (efficient but limited in stacked cases);</li>
+            <li><b>Strategy 4:</b> Iterative graspable-object detection (best trade-off).</li>
+          </ul>
+
+        </br>
+<p style="text-align: left;">
+            Demonstrations of these adaptive grasping strategies are available in the accompanying video content.
+          </p>
+
+          
+
+          <!-- </div> -->
+        </div>
+      </div>
+
+
+
+
+      
+
+
+
+      <section class="section">
+        <div class="container is-max-desktop">
+
+          <div class="columns is-centered has-text-centered">
+            <div class="column" id="Paper">
+              <h2 class="title is-3">Paper</h2>
+              <div class="paper-thumbnail">
+                <a href="https://arxiv.org">
+                  <img class="layered-paper-big" width="100%" src="./static/images/paper_img.png"
+                    alt="Paper thumbnail" />
+                </a>
+              </div>
+              <div class="paper-info">
+                <!-- <a href="https://openreview.net/forum?id=rxlokRzNWRq"><h3>ManiCast: Collaborative Manipulation with Cost-Aware Human Forecasting</h3></a>
+        <p>Kushal Kedia, Prithwish Dan, Atiksh Bhardwaj, Sanjiban Choudhury</p> -->
+                <h3 class="title is-4" style="text-align: center;">BibTex</h3>
+                <pre style="overflow-x:hidden; text-wrap:wrap; white-space: pre-wrap;"><code>@misc{Sinico2026,
+  title={Zero-Shot Robotic Waste Sorting: Integrating Vision-Language-Action Models and RGB-D Sensing on KUKA LBR iiwa}, 
+  author={Teresa Sinico, Daniele Businaro and Giovanni Boschetti},
+  year={2026},
+  eprint={},
+  archivePrefix={},
+  primaryClass={},
+  url={}, 
+}
+  
+</code></pre>
+              </div>
+            </div>
+
+          </div>
+      </section>
+
+      <br>
+
+
+      <footer class="footer">
+        <div class="container">
+          <!-- <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div> -->
+          <div class="columns is-centered">
+            <div class="column is-8">
+              <div class="content has-text-centered">
+                <p>
+                  Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+</body>
+
+</html>
